@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    background-image: url("./../assets/images/pngtree-cartoon-sailing-boat-with-sea-or-lake-view-background-vector-illustration-picture-image_1807130.jpg");
+    background-size: cover;
+}
+
+.container{
+    padding-top: 20px;
+    width: 100%;
+    min-width: 800px;
+    margin: 0 auto 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.title, h1, h2, h3, h4{
+    background-color: rgba(129, 61, 128, 0.488);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-variant: small-caps;    
+    font-size: 1.5rem;
+    color: #fff89b;
+}
+.title_mod{
+    color: #ADD8E6;
+}
+
+.conf_juego{
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto 0;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    border: 5px solid #ADD8E6;
+    background-color: #fff89b;
+
+    animation-name: conf__juego;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes conf__juego{
+    0%{
+        scale: 0.1;
+    }
+    50%{
+        scale: 1.5;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+.quitarConf{
+    animation-name: quitarConf;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes quitarConf{
+    20%{
+        opacity: 1;
+        transform: translateY(0px) scale(1.2);
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+label{
+    text-align: left;
+}
+.conf_casillas{
+    width: 200px;
+    height: 75px;
+    border-radius: 10px;
+    border: 2px solid #fff89b;
+    background-color: #ADD8E6;
+    display: flex;
+    justify-content: center;
+}
+select{
+    text-align: center;
+}
+button{
+    width: 100px;
+    height: 50px;
+    background-color: #fff89b;
+    border: 2px solid #ADD8E6;
+    border-radius: 10px;
+}
+
+.paneles{
+    display: none;
+}
+.panel__enemigo, .panel__aliado{
+    display: flex;
+    justify-content: center;
+} 
+.panel__aliado{
+    margin-top: 20px;
+}
+.panel__enemigo td{
+    background-color: #fff89b;
+    border: 2px solid #000000;
+}
+
+table {
+    border-collapse: separate ;
+    width: 800px;
+}
+
+td {
+    border-radius: 10px;
+    margin: 20px;
+    width: 200px;
+    min-width: 100px;
+    height: 40px;
+    border: 2px solid #000; 
+    padding: 10px;
+    text-align: center;
+    background-color: #ADD8E6; 
+}
+.panel__enemigo td:hover{
+    background-color: #ffee00;
+    transition-duration: 0.2s;
+    transform: scale(1.05);
+}
+td:hover{
+    background-color: #00bfff;
+    transition-duration: 0.2s;
+    transform: scale(1.05);
+}
+
+.puntosAliados, .puntosEnemigos{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    display: none;
+}
+.puntosAliados{
+    left: 50px;
+}
+
+.puntosEnemigos{
+    right: 50px;
+}
+
+.fin_juego{
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto 0;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    border: 5px solid #ADD8E6;
+    background-color: #fff89b;
+
+    animation-name: conf__juego;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    display: none;
+}

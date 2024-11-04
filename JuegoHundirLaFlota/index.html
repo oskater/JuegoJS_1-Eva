@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="container">
+    <h1 class="title">Hunde <a class="title_mod">La </a>Flota</h1>
+
+    <div id="conf_juego" class="conf_juego">
+        <h2>¡Elige el tamaño de los paneles para aumentar o disminuir la DIFICULTAD!</h2>
+        <label for="">Tamaño de panel:</label>
+        <select class="conf_casillas" name="NumeroCasillas" id="NumeroCasillas">
+            <option value="Selecciona">Selecciona</option>
+            <option value="4x4">4x4</option>
+            <option value="6x6">6x6</option>
+            <option value="8x8">8x8</option>
+        </select>
+        <button id="btn_jugar">Jugar</button>
+    </div>
+
+    <div id="paneles" class="paneles">
+        <div class="panel__enemigo" id="panel__enemigo">
+            
+        </div>
+    
+        <div class="panel__aliado" id="panel__aliado">
+            
+        </div>
+    </div> 
+
+    <div class="puntosAliados" id="puntosAliados">
+        <h2>Puntos Aliados:</h2>
+        <h4>0</h4>
+    </div>
+
+    <div class="puntosEnemigos" id="puntosEnemigos">
+        <h2>Puntos Enemigos:</h2>
+        <h4>0</h4>
+    </div>
+
+    <div id="fin_juego" class="fin_juego">
+        <h1></h1>
+        <button id="btn_reiniciar">Volver a Jugar</button>
+    </div>
+
+    <script src="./JS/js.js"></script>
+</body>
+
+</html>
